@@ -1,9 +1,9 @@
 :root {
   --white: #fff;
-  --light-grey: #f5f6f7;
-  --dark-grey: #0a0a23;
-  --yellow: #f1be32;
-  --golden-yellow: #feac32;
+  --light-grey: #1e2125;
+  --dark-grey: #9ca6bc;
+  --yellow: #140f02;
+  --golden-yellow: #1d1c19;
 }
 
 *,
@@ -16,6 +16,7 @@
 
 body {
   background-color: var(--dark-grey);
+  font-family: 'Outfit', sans-serif;
 }
 
 main {
@@ -35,7 +36,7 @@ h1 {
   width: 300px;
   height: 350px;
   border: 5px solid var(--yellow);
-  border-radius: 8px;
+  border-radius: 0;
   padding: 15px;
   position: relative;
   display: flex;
@@ -46,19 +47,21 @@ h1 {
 .btn {
   cursor: pointer;
   width: 100px;
+  border-radius: 15px;
   margin: 10px;
   color: var(--dark-grey);
   background-color: var(--golden-yellow);
-  background-image: linear-gradient(#fecc4c, #ffac33);
+  background-image: linear-gradient(#0d0b05, #040301);
   border-color: var(--golden-yellow);
   border-width: 3px;
 }
 
 .btn:hover {
-  background-image: linear-gradient(#ffcc4c, #f89808);
+  background-image: linear-gradient(#1e1c15, #292620);
 }
 
 .large-btn {
+    border-radius: 15px;
   width: 80%;
   font-size: 1.2rem;
   align-self: center;
@@ -66,6 +69,7 @@ h1 {
 }
 
 .close-task-form-btn {
+    border-radius: 50%;
   background: none;
   border: none;
   cursor: pointer;
